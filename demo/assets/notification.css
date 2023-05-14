@@ -10,5 +10,10 @@
 }
 
 .notification {
-    
+    display: block;
+
+    padding: 1em;
+    border-radius: 1em;
+    border: 0.2em black;
 }
+

@@ -5,16 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./assets/notification.js" type="module"></script>
     <link rel="stylesheet" href="./assets/notification.css">
 </head>
 <body>
     <div class="notification-box"></div>
     <main>
-        <button onclick="">info notification</button>
-        <button onclick="">finish notification</button>
-        <button onclick="">warning notification</button>
-        <button onclick="">error popup</button>
+        <button id="btn1">info notification</button>
+        <button id="btn2">success notification</button>
+        <button id="btn3">warning notification</button>
+        <button id="btn4">error notification</button>
     </main>
+    <script>
+        
+        document.getElementById("btn1").addEventListener("click", () => {
+            console.log("aaaaaaa")
+            /*addNotification("this is an info notification", 0)*/
+        })
+        /*import { addNotification } from "./assets/notification.js"
+        document.getElementById("btn2").addEventListener("click", () => {
+            addNotification("this is a success notification", 1)
+        })
+        document.getElementById("btn3").addEventListener("click", () => {
+            addNotification("this is a warning notification", 2)
+        })
+        document.getElementById("btn4").addEventListener("click", () => {
+            addNotification("this is an error notification", 3)
+        })*/
+    </script>
 </body>
 </html>
