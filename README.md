@@ -1,3 +1,3 @@
 # popup.js
 
-a simple library for making popups
+a simple library for making custom popups
