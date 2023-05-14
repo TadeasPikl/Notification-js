@@ -1,0 +1,9 @@
+.popup-box {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    width: 25em;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
