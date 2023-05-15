@@ -14,14 +14,14 @@
         <button id="btn2">success notification</button>
         <button id="btn3">warning notification</button>
         <button id="btn4">error notification</button>
+        <button id="btn5">long notification</button>
     </main>
-    <script>
-        
+    <script type="module">
+        import { addNotification } from "./assets/notification.js";
+
         document.getElementById("btn1").addEventListener("click", () => {
-            console.log("aaaaaaa")
-            /*addNotification("this is an info notification", 0)*/
+            addNotification("this is an info notification", 0)
         })
-        /*import { addNotification } from "./assets/notification.js"
         document.getElementById("btn2").addEventListener("click", () => {
             addNotification("this is a success notification", 1)
         })
@@ -30,7 +30,10 @@
         })
         document.getElementById("btn4").addEventListener("click", () => {
             addNotification("this is an error notification", 3)
-        })*/
+        })
+        document.getElementById("btn5").addEventListener("click", () => {
+            addNotification("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum commodi aut asperiores atque non dignissimos suscipit odit voluptate nobis accusantium ut illo, est, veniam aperiam cupiditate beatae eos assumenda laboriosam.", 0)
+        })
     </script>
 </body>
 </html>

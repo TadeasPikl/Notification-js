@@ -11,9 +11,40 @@
 
 .notification {
     display: block;
+    position: relative;
 
     padding: 1em;
-    border-radius: 1em;
-    border: 0.2em black;
+    padding-right: 1.5em;
+    border-radius: 0.5em;
+    border: solid 0.05em;
+
+    border-color: black;
+    background-color: white;
+    color: black;
 }
 
+.notification--close {
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    
+    top: 0.5em;
+    right: 0.5em;
+
+    cursor: pointer;
+}
+
+.notification__success {
+    background-color: green;
+    color: white;
+}
+
+.notification__warning {
+    background-color: orange;
+    color: black;
+}
+
+.notification__error {
+    background-color: red;
+    color: white;
+}

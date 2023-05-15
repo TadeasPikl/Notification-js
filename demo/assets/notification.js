@@ -1,10 +1,6 @@
-export { sendNotification }
+const notificationBox = document.querySelector(".notification-box")
 
-window.addEventListener("DOMContentLoaded", () => {
-    notificationBox = document.querySelector("notification-box")
-});
-
-function sendNotification(message, type) {
+export function addNotification(message, type) {
     const notif = document.createElement("div")
 
     notif.classList.add("notification")
@@ -26,5 +22,18 @@ function sendNotification(message, type) {
             console.log("invalid notification type")
     }
 
-    notificationBox.appendChild(notif)
+    const notifClose = document.createElement("img")
+
+    notifClose.classList.add("notification--close")
+    notifClose.src = "./assets/notification-icons/close-icon.svg"
+    
+    
+    
+    notificationBox.prepend(notif)
+    notif.append(notifClose)
+    
+    notifClose.addEventListener("click", (event) => {
+        notificationBox.removeChild(event.target.parentElement)
+    })
 }
+
